@@ -3,6 +3,6 @@ class DynamicPagesController < ApplicationController
   end
 
   def show
-    @gossips = Gossip.find(params[:id]) 
+    @gossips = Gossip.find(params[:id])
   end
 end
