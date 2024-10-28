@@ -1,0 +1,13 @@
+<h1> Bienvenue </h1>
+<p> Voici la liste des potins : </p>
+
+<p>
+
+  <% @gossips.each do |gossip| %>
+    <div class="gossip">
+      <h3><%= link_to gossip.title, gossip_path(gossip) %></h3>
+      <p>Écrit par : <%= gossip.user&.first_name || "Auteur inconnu" %></p>
+    </div>
+
+<% end %>
+</p>
