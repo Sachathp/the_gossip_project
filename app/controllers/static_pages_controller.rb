@@ -7,7 +7,6 @@ class StaticPagesController < ApplicationController
 
   def home
     @gossips = Gossip.all
-    #@gossip = Gossip.find(params[:id])
+    # @gossip = Gossip.find(params[:id])
   end
-    
 end
