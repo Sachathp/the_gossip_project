@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get "/team", to: "static_pages#team"
   get "/home", to: "static_pages#home"
   get "/gossips/:id", to: "dynamic_pages#show"
+  get "/users/:id", to: "dynamic_pages#user_page"
 
   get "/contact", to: "static_pages#contact"
 
@@ -14,6 +15,7 @@ Rails.application.routes.draw do
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
   resources :gossips
+  resources :users
   # Defines the root path route ("/")
   # root "posts#index"
 
