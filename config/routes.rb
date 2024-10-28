@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get "/welcome:user_name", to: "dynamic_pages#welcome"
   get "/team", to: "static_pages#team"
   get "/home", to: "static_pages#home"
+  get "/gossips/:id", to: "dynamic_pages#show"
 
   get "/contact", to: "static_pages#contact"
 
