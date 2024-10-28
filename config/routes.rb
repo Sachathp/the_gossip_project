@@ -15,4 +15,7 @@ Rails.application.routes.draw do
   resources :gossips
   # Defines the root path route ("/")
   # root "posts#index"
+
+  get 'static_pages/team', to: 'static_pages#team'
+get 'dynamic_pages/welcome', to: 'dynamic_pages#welcome'
 end
